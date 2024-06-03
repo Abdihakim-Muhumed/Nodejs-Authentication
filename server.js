@@ -13,6 +13,27 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended: true}));
 
+const db =  require("./models")
+db.sequelize().sync({force: true}).then(() => {
+    console.log('Drop and Resync DB');
+    initial();
+})
+
+function initial() {
+    Role.create({
+        id: 1,
+        name: "user"
+    });
+    Role.create({
+        id: 2,
+        name: "moderator"
+    });
+    Role.create({
+        id: 1,
+        name: "admin"
+    });
+}
+
 app.get("/", (req, res) => {
     res.json({
         message: "Welcome to Nodejs Authentication app.",
