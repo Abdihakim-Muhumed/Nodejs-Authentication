@@ -1,0 +1,26 @@
+{
+  "name": "auth_nodejs",
+  "version": "1.0.0",
+  "description": "Node js authentication app using JWT with postgresql database",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdihakim-Muhumed/Nodejs-Authentication.git"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "authentication",
+    "jwt",
+    "postgresql"
+  ],
+  "author": "Abdihakim Muhumed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdihakim-Muhumed/Nodejs-Authentication/issues"
+  },
+  "homepage": "https://github.com/Abdihakim-Muhumed/Nodejs-Authentication#readme"
+}
