@@ -14,7 +14,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 const db =  require("./models")
-db.sequelize().sync({force: true}).then(() => {
+const Role = db.role
+db.sequelize.sync({force: true}).then(() => {
     console.log('Drop and Resync DB');
     initial();
 })
@@ -29,7 +30,7 @@ function initial() {
         name: "moderator"
     });
     Role.create({
-        id: 1,
+        id: 3,
         name: "admin"
     });
 }
