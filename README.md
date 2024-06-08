@@ -5,8 +5,9 @@ This is a NODEJS authentication and authorisation app developed with JWT and Seq
 Follow these steps to run the app locally:
     1. Clone the repository to your local machine.
     2. Run `npm install` to install dependencies.
-    3. Set environment variable on .env.
+    3. Set environment variables on the example.env file.
     4. Run `node server.js` to run the app.
+    5. Test APIs on Postman.
 # Technologies Used
  1. Node JS
  2. Express
